@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Constants</title>
+  </head>
+  <body>
+    <p id="pResultMAXValue"></p>
+    <p id="pResultMINValue"></p>
+    <p id="pResultSAFEMAXInt"></p>
+    <p id="pResultSafeminInt"></p>
+    <p id="pResultpostive"></p>
+    <p id="pResultnegative"></p>
+  </body>
+  <script>
+
+    var maxValue = Number.MAX_VALUE;
+    document.getElementById("pResultMAXValue").innerHTML = maxValue;
+
+    var minValue = Number.MIN_VALUE;
+    document.getElementById("pResultMINValue").innerHTML = minValue;
+
+    var maxSafeInt = Number.MAX_SAFE_INTEGER;
+    document.getElementById("pResultSAFEMAXInt").innerHTML = maxSafeInt;
+
+    var minSafeInt = Number.MIN_SAFE_INTEGER;
+    document.getElementById("pResultSafeminInt").innerHTML = minSafeInt;
+
+    var postiveInf = Number.POSITIVE_INFINITY;
+    document.getElementById("pResultpostive").innerHTML = postiveInf;
+
+    var negativeInf = Number.NEGATIVE_INFINITY;
+    document.getElementById("pResultnegative").innerHTML = negativeInf;
+
+    //   alert("It is an Min value of js.  " + Number.MIN_VALUE);
+    //   alert("It is an SAFE Max value of js.  " + Number.MAX_SAFE_INTEGER);
+    //   alert("It is an SAFE Min value of js.  " + Number.MIN_SAFE_INTEGER);
+    // console.log(Number.MINVALUE);
+
+  </script>
+</html>

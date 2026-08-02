@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ToFixed and Presicion Functions</title>
+    <script>
+        function onClickBtnFix(){
+            debugger;
+
+            var inuputValue = Number(document.getElementById("txtInuputValue").value);
+
+
+            var digits=Number(document.getElementById("txtDigits").value);
+
+
+            alert("This is an "+ inuputValue.toFixed(digits));
+        }
+        function onClickBtnPrecision(){
+             debugger;
+
+            var inuputValue = Number(document.getElementById("txtInuputValue").value);
+
+
+            var digits=Number(document.getElementById("txtDigits").value);
+
+
+            alert("This is an "+ inuputValue.toPrecision(digits));
+        }
+    </script>
+</head>
+<body>
+    <h1>ToFixed Operations </h1>
+    
+
+    <label for="txtInuputValue">Input Value:-</label>
+    <input type="number" id="txtInuputValue" placeholder="Enter your input value"/>
+    <label for="txtDigits">Digits-</label>
+    <input type="number" id="txtDigits" placeholder="Enter your fixingNo."/>
+    
+    <button id="btnToFix" onclick="onClickBtnFix()">Fix</button>
+    <button id="btnToPrecision" onclick="onClickBtnPrecision()">Precision</button>
+</body>
+</html>
