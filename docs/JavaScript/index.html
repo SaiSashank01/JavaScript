@@ -1,0 +1,57 @@
+<!--USING THE HTML FILE WE USE JS(Inline)BASIC FUNCTIONS-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Action Formattions</title>
+    <script>
+      function onClickBtnAdd() {
+        let a = Number(document.getElementById("nb1").value);
+        let b = Number(document.getElementById("nb2").value);
+        let c = a + b;
+        alert("The Value of the " + c);
+        console.log("The Sum of " + a + "  and  " + b + " is " +c);
+      }
+       function onClickBtnSub() {
+        let a = Number(document.getElementById("nb1").value);
+        let b = Number(document.getElementById("nb2").value);
+
+        let c = a - b;
+        alert("The Value of the " +c);
+        console.log("The Sub of " + a + "  and  " + b + " is " +c);
+      }
+       function onClickBtnMulti() {
+
+        let a = Number(document.getElementById("nb1").value);
+        let b = Number(document.getElementById("nb2").value);
+
+        let c = a * b;
+        alert("The Value of the " +c);
+        console.log("The Multipication of " + a + "  and  " + b + " is " +c);
+      }
+       function onClickBtnDiv() {
+
+        let a = Number(document.getElementById("nb1").value);
+        let b = Number(document.getElementById("nb2").value);
+
+        let c = a / b;
+        alert("The Value of the " +c);
+        console.log("The Division of " + a + "  and  " + b + " is " +c);
+      }
+      
+    </script>
+  </head>
+  <body>
+    <h1>Basic Operations of Js :) </h1>
+
+    <label for="nb1">Number 1:</label>
+    <input id="nb1" type="number" placeholder="Enter your First value" />
+
+    <label for="nb2">Number 2:</label>
+    <input id="nb2" type="number" placeholder="Enter your Second value" />
+
+    <button id="btnadd" onclick="onClickBtnAdd()">Add</button>
+    <button id="btnSub" onclick="onClickBtnSub()">Sub</button>
+    <button id="btnMulti" onclick="onClickBtnMulti()">Multi</button>
+    <button id="btnDiv" onclick="onClickBtnDiv()">Divide</button>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rounding Opertion </title>
+</head>
+<body>
+    <h1>Rounding Operations </h1>
+
+    <label for="txtBox" >Input Value:)</label>
+    <input id="txtInputNumber" type="number" placeholder="Enter your Value" />
+    <p id="pResultRound"></p>
+    <p id="pResultCeil"></p>
+    <p id="pResultfloor"></p>
+    <p id="pResulttrunc"></p>
+
+    <button id="btnRound" onclick="onClickBtnRound()">Round</button>
+    <button id="btnCeil" onclick="onClickBtnCeil()">Ceil</button>
+    <button id="btnFloor" onclick="onClickBtnFloor()">Floor</button>
+    <button id="btnTrunc" onclick="onClickBtnTrunc()">Trunc</button>
+</body>
+<script> 
+    function onClickBtnRound(){
+        var inputNumber=Number(document.getElementById("txtInputNumber").value);
+        // var roundNumber = ;
+        document.getElementById("pResultRound").innerHTML = "Round Value "+ Math.round(inputNumber);
+    }
+    function onClickBtnCeil(){
+        var inputNumber=Number(document.getElementById("txtInputNumber").value);
+        document.getElementById("pResultCeil").innerHTML = "Ceil Value " +Math.ceil(inputNumber);
+    }
+    function onClickBtnFloor(){
+        var inputNumber=Number(document.getElementById("txtInputNumber").value);
+        document.getElementById("pResultfloor").innerHTML = "Floor Value  " +Math.floor(inputNumber);
+    }
+    function onClickBtnTrunc(){
+        var inputNumber=Number(document.getElementById("txtInputNumber").value);
+        document.getElementById("pResulttrunc").innerHTML = "Trunc Value "+Math.floor(inputNumber);
+    }
+</script>
+</html>
