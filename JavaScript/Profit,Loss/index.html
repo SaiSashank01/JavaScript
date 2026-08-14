@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profit  /  Loss</title>
+
+    <script>
+        function onClickProfitLoss(){
+            inputCostPrice = Number(document.getElementById("txtCostPrice").value);
+            inputSellingPrice = Number(document.getElementById("txtSellingPrice").value);
+            inputTotalValue = inputSellingPrice - inputCostPrice;
+            alert("The Value :"+inputTotalValue);
+            Value = Math.sign(inputTotalValue)
+
+            if(Value == -1){
+                alert("Loss: "+Math.abs(inputTotalValue)+"₹")
+            }
+            else if(Value == 0){
+                alert("No Profit & No Loss");
+            }
+            else{
+                alert("Profit: "+Math.abs(inputTotalValue)+"₹")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Profit / Loss Operations </h1>
+
+    <label for="txtCostPrice">Cost Price:</label>
+    <input type="text" id="txtCostPrice"/>
+
+    <label for="txtSellingPrice">Selling Price: </label>
+    <input type="text" id="txtSellingPrice"/> 
+
+
+    <button onclick="onClickProfitLoss()" id="btnP/L">P/L</button>
+</body>
+</html>
