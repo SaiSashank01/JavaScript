@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>String indexes</title>
+    <script>
+        function onClickSubmit(){
+            Name = document.getElementById("txtName").value;
+            indexNumber = document.getElementById("numberIndexNumber").value;
+
+            alert(`The Index is ${Name[indexNumber]}`);
+            alert(Name.length);
+        }
+    </script>
+</head>
+<body>
+    <h1>String Index</h1>
+    <label for="txtName"> Name: </label>
+    <input type="text" id="txtName"><br>
+
+
+    <label for="numberIndexNumber">Index Number: </label>
+    <input type="number" id="numberIndexNumber" style="margin: 4px;">
+
+    <button id="btnSubmit" onclick="onClickSubmit()">Submit</button>
+</body>
+</html>
