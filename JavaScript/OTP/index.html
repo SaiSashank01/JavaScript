@@ -5,10 +5,7 @@
     <script>
       function onClickCheck() {
         digits = Number(document.getElementById("txtDigits").value);
-        alert(
-          "The Random number: " +
-            Math.trunc(Math.random() * Math.pow(10, digits)),
-        );
+        alert("The Random number: " +Math.trunc(Math.random() * Math.pow(10, digits)),);
       }
     </script>
   </head>
@@ -16,7 +13,6 @@
     <h1>Generating the OTP values</h1>
     <label for="txtDigits">Digits:</label>
     <input id="txtDigits" type="text" />
-
     <button id="btnCheck" onclick="onClickCheck()">Check</button>
   </body>
 </html>
