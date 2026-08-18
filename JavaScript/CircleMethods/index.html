@@ -5,22 +5,24 @@
 </head>
 <body>
     <h1>Radius Operations </h1>
-    <label for="txtRadius">Radius Value:)</label>
-    <input id="txtRadius" placeholder="Enter your Value" />
+    <label for="txtRadius">Radius Value:</label>
+    <input id="txtRadius" placeholder="Enter your value" />
+
     <p id="pResultDiameter"></p>
     <p id="pResultCircumference"></p>
     <p id="pResultArea"></p>
-    <button id="btnClick" onclick="onclickBtn()">Click</button>
+    <button id="btnClick" type="button" onclick="onclickBtn()">Click</button>
 </body>
 <script>
     function onclickBtn(){
         var radiusValue = Number(document.getElementById("txtRadius").value);
-        var area = Math.PI*radiusValue*radiusValue;
-        var diameter = 2*radiusValue*radiusValue;
-        var circumference = 2*Math.PI*radiusValue;
-        document.getElementById("pResultDiameter").innerHTML = "The Diameter Value :" +diameter;
-        document.getElementById("pResultArea").innerHTML = "The Area Value :" +area.toFixed(3);
-        document.getElementById("pResultCircumference").innerHTML = "The Circumfernce Value :" +circumference.toFixed(2);
+        var area = Math.PI * radiusValue * radiusValue;
+        var diameter = 2 * radiusValue;
+        var circumference = 2 * Math.PI * radiusValue;
+
+        document.getElementById("pResultDiameter").innerHTML = "The Diameter Value: " + diameter;
+        document.getElementById("pResultArea").innerHTML = "The Area Value: " + area.toFixed(3);
+        document.getElementById("pResultCircumference").innerHTML = "The Circumference Value: " + circumference.toFixed(2);
     }
 </script>
 </html>
