@@ -5,12 +5,10 @@
     <script>
       function onClickCheck() {
         const digits = Number(document.getElementById("txtDigits").value);
-
         if (!Number.isInteger(digits) || digits <= 0) {
           alert("Please enter a valid positive number of digits.");
           return;
         }
-
         const otp = String(Math.floor(Math.random() * Math.pow(10, digits))).padStart(digits, "0");
         alert("The Random number: " + otp);
       }
