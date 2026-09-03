@@ -4,6 +4,7 @@
     <title>OTP Generating</title>
     <script>
       function onClickCheck() {
+        debugger;
         const digits = Number(document.getElementById("txtDigits").value);
         if (!Number.isInteger(digits) || digits <= 0) {
           alert("Please enter a valid positive number of digits.");
