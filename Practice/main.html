@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Using Inline Format</title>
+  </head>
+  <body>
+    <div>
+      <h1 style="color: rgb(230, 135, 135); text-align: center">
+        Creating a Inline Format
+      </h1>
+      <p
+        style="
+          color: rgb(128, 98, 103);
+          border: 2px solid black;
+          border-radius: 10px;
+        "
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+        ullam illum, saepe itaque qui blanditiis vitae porro alias a magni
+        expedita harum repellat, unde facere consequuntur sit officiis atque
+        optio dolorem molestiae, obcaecati corporis! Quis, tenetur vero dolore
+        laboriosam, quae numquam tempore ipsa aliquid ex adipisci enim suscipit
+        nemo quos!Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Molestias ullam illum, saepe itaque qui blanditiis vitae porro alias a
+        magni expedita harum repellat, unde facere consequuntur sit officiis
+        atque optio dolorem molestiae, obcaecati corporis! Quis, tenetur vero
+        dolore laboriosam, quae numquam tempore ipsa aliquid ex adipisci enim
+        suscipit nemo <b>Ques</b>!
+      </p>
+      <h2 style="color: darkgreen; text-align: center">
+        Hey Welcome to My Inline Format information
+      </h2>
+      <p style="color: aqua; border: 2px solid black; border-radius: 10px">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
+        ullam illum, saepe itaque qui blanditiis vitae porro alias a magni
+        expedita harum repellat, unde facere consequuntur sit officiis atque
+        optio dolorem molestiae, obcaecati corporis! Quis, tenetur vero dolore
+        laboriosam, quae numquam tempore ipsa aliquid ex adipisci enim suscipit
+        nemo quos!Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Molestias ullam illum, saepe itaque qui blanditiis vitae porro alias a
+        magni expedita harum repellat, unde facere consequuntur sit officiis
+        atque optio dolorem molestiae, obcaecati corporis! Quis, tenetur vero
+        dolore laboriosam, quae numquam tempore ipsa aliquid ex adipisci enim
+        suscipit nemo quos!
+      </p>
+    </div>
+    <form
+      style="
+        text-align: center;
+        max-width: 450px;
+        margin: 0 auto;
+        border: 2px solid black;
+        padding: 5%;
+        border-radius: 20px;
+        background-color: #a2aaad;
+      "
+    >
+      <span id="spanDetails">
+        <div
+          style="
+            background-color: #ebddec;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin-bottom: 15px;
+          "
+        >
+          <label for="nme" style="color: brown">Name:</label>
+          <input type="text" placeholder="Enter your Name" id="nme" /><br />
+        </div>
+        <div
+          style="
+            background-color: #ebddec;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin-bottom: 15px;
+          "
+        >
+          <label for="pwd" style="color: brown">Password:</label>
+          <input
+            type="password"
+            placeholder="Enter your Password"
+            id="pwd"
+          /><br />
+        </div>
+
+        <div
+          style="
+            background-color: #ebddec;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin-bottom: 15px;
+          "
+        >
+          <label for="emil" style="color: brown">Email:</label>
+          <input type="email" placeholder="Enter Your Email" id="emil" /><br />
+        </div>
+        <div
+          style="
+            background-color: #ebddec;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin-bottom: 15px;
+          " for = "allRaidoBtns"
+        >
+          <label for="raidoBtn" style="color: brown">Gender:</label>
+          <input id="raidoBtn" type="radio" name = "gender"/>Male
+          <input id="FemaleBtn" type="radio" name = "gender"/>Female
+        </div>
+        <div
+          style="
+            background-color: #ebddec;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin-bottom: 15px;
+          " 
+        >
+        <div >
+          <label for = "checkBoxlts" style="color: brown">Skills:</label>
+          <input type="checkbox" id="firstChckbox" name="firstChckbox">
+          <label for="firstChckbox">Full Stack</label>
+          <input type="checkbox" id="secondChckbox" name="secondChckbox">
+          <label for="secondChckbox">MangoDB</label>
+          <input type="checkbox" id="thirdChckbox" name="thirdChckbox">
+          <label for="thirdChckbox">Cloud Computing</label>
+        </div>
+   
+        </div>
+        <div>
+          <label for="btn"></label>
+          <input
+            id="btn"
+            type="submit"
+            onclick="onclickMethod()"
+            placeholder="Save"
+            style="color: brown"
+          />
+        </div>
+      </span>
+    </form>
+    <script>
+      function onclickMethod() {
+        debugger;
+        var nameVariable = document.getElementById("nme").value;
+        var pwdVariable = document.getElementById("pwd").value;
+        var emaiVariable = document.getElementById("emil").value;
+        // var radioVariable = document.getElementById("allRaidoBtns").value;
+        // var checkBoxVariable = document.getElementById("checkBoxlts").value;
+        var saveBtn = document.getElementById("btn").value;
+        alert("The Name of the User is : " + nameVariable);
+        alert("The password of the User is :  " + pwdVariable);
+        alert("The Mail of the User is :  " + emaiVariable);
+        // alert("The Details For the UserDetails:  " + radioVariable);
+        // alert("The Details For the UserDetails:  " + checkBoxVariable);
+        promtVariable = prompt("Enter your text : ");
+        console.log("This is an text :"+promtVariable);
+      }
+    </script>
+  </body>
+</html>
