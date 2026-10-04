@@ -18,6 +18,8 @@ function onclickBtn() {
     })
     .catch((error) => {
       document.getElementById("valueInput").innerHTML = error;
+      emty1 = document.getElementById("valueInput").value;
+      emty1.style.color="red";
     })
     .finally(() => {
       console.log("Completed")
