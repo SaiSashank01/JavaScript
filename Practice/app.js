@@ -34,7 +34,6 @@ function printTables(n) {
 printTables(4);
 
 
-
 //printing N Number 
 function getSum(n) {
     let sum = 0;
